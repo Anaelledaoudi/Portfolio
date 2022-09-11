@@ -1,38 +1,110 @@
-.App {
+html {
+  scroll-behavior: smooth;
+}
+*{
+  font-family: 'Rubik', sans-serif;
+}
+.logo{
+  width: 70px;
+  margin-left: 5%;
+  margin-top: -15%;
+}
+#title{
+  width: 60%;
+  margin-left: 20%;
+}
+.word{
+  color: orange;
+}
+h5{
+  text-align: end;
+  margin-right: 10%;
+  color: rgb(111, 107, 107);
+}
+*{
+  border:2px solid red;
+}
+.about{
+  margin-top: 20%;
+  margin-left: 15%;
+  width: 70%;
+}
+.aboutPara{
+  display: flex;
+}
+.skills,.work,.contact{
+  margin-top: 15%;  
+}
+.skillsIcons,.worksProjects{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 10px;
+  width: 70%;
   text-align: center;
+  margin:auto;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.worksProjects{
+  grid-template-columns:repeat(3,1fr);
 }
+@media only screen and (max-width: 830px){
+  .skillsIcons{
+    margin:auto;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .aboutPara{
+    flex-direction: column;
+  }
+  .worksProjects{
+    grid-template-columns: repeat(2,1fr);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media only screen and (max-width: 560px){
+  .skillsIcons{
+    margin-left: 2vw;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .worksProjects{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  
+}
+.icon, .project{
+  height: 130px;
+  width: 190px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+.project{
+  height: 200px;
+  width: 100%;
+}
+.contactForm{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.contact{
+  width: 70%;
+  margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+  height: 100px;
+}
+.submit{
+  padding: 2%;
+  border-radius: 7px;
+  width: 40%;
+  margin: auto;
+}
+h3{
+  text-align: center;
+}
+.skills,.work,.contact{
+  margin-top: 15%;  
+}
+.contactForm *{
+  margin-top:5%;
 }
