@@ -5,7 +5,7 @@ const Contact=()=>{
         <div className="contact">
             <h3>Contact</h3>
             <div className="contactForm">
-                <p>Submit the form below or Email me Directly - Isaacaltif123@gmail</p>
+                <p>Submit the form below or Email me Directly <a href='anaelledaoudi@gmail.com'>Anaelledaoudi@gmail.com</a></p>
                 <input type='text' placeholder="Name"/>
                 <input type='text' placeholder="Email"/>
                 <textarea  placeholder="Message"></textarea>
